@@ -1,0 +1,84 @@
+h1,p,body{
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+a{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: rgb(244, 79, 79);
+  text-align:  center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+
+#parent {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.contents{
+  flex-basis: 25%;
+  margin: 20px 0px 20px 0px;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  border: solid 3px rgb(238,204,204);
+}
+
+.contents img {
+  margin: 10px 0px 10px 0px;
+  width: 70%;
+}
+
+.contents h2{
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+
+p:nth-of-type(2)::first-letter {
+  /* 文字装飾のプロパティを使います（以下はあくまで一例です） */
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+a:visited {
+  color: rgb(193, 234, 251);
+}
+
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+footer {
+  background-color: rgb(244, 79, 79);
+  justify-content: center;
+  text-align:  center;
+}
+
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  #parent{
+    display: block;
+  }
+}
